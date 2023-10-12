@@ -40,10 +40,15 @@ class Home extends StatelessWidget {
                   physics: const BouncingScrollPhysics(),
                   itemCount: 10,
                   itemBuilder: (context, index) {
-                    return Column(
-                      children: [
-                        PostWidget(size: size, listImage: postlist),
-                      ],
+                    return SizedBox(
+                      child: PostWidget(
+                        size: size,
+                        listImage: postlist,
+                        userName: 'Sajjad',
+                        like: 44.456,
+                        picAvatar: picList[3],
+                        picAvatarLiked: picList[2],
+                      ),
                     );
                   },
                 ),

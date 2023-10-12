@@ -24,6 +24,9 @@ class ConstantHome {
       TextStyle(color: Colors.black, fontWeight: FontWeight.bold);
   static const textStyleLocationUser =
       TextStyle(color: Colors.black, fontWeight: FontWeight.w400);
+
+  static const textStyleLocationUserLike =
+      TextStyle(color: Colors.black, fontWeight: FontWeight.w800);
 }
 
 const List<String> postlist = [
