@@ -41,13 +41,19 @@ class Home extends StatelessWidget {
                   itemCount: 10,
                   itemBuilder: (context, index) {
                     return SizedBox(
-                      child: PostWidget(
+                      child: Post.image(
+                        captions:
+                            "sghl phgj ]x,vi ;[hdd lkdfkewfjkejwkfkwekkk]dddddddddddw df ewf wererergggggrg rghrt greregerg erg er grrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrre gh errgegr er",
                         size: size,
                         listImage: postlist,
                         userName: 'Sajjad',
                         like: 44.456,
                         picAvatar: picList[3],
                         picAvatarLiked: picList[2],
+                        likeCount: 100,
+                        showPointStackPic: size.width <= 390 ? true : false,
+                        showAnimatedContainerBottom:
+                            size.width >= 390 ? true : false,
                       ),
                     );
                   },
